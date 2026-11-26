@@ -1,2 +1,3 @@
 # PROYECTO-SO-G02
 PROYECTO FINAL DE SISTEMAS OPERATIVOS GRUPO 2
+![Captura de lsblk](img/lsblk.png)

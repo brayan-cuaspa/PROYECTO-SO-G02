@@ -204,21 +204,48 @@ mint montado en virtual box :)
 
 <img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/c136b106-154b-473a-8fe5-8b4fd1e61c5e" />
 
+# **Punto numero 3 configuracion de Red **
+- sabemos por medio del PDF **proyecto final** que VirtualBox usa NAT así que nuestras dos maquinas tanto la grafica como la de consola no interactuaran entre ellas a través de este tipo de red por lo que se procede a hacer la instalación de adaptadores para hacer posible una comunicación entre las maquinas virtuales se va a realizar en forma ordenada para una clara comprencion del lector ╰(*°▽°*)╯  
 
+## Configuracion inicial de VMs
 
+### Estado inicial red maquina grafica
 
-# **3-red**
-## 3. Red
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/178dc06d-2977-43b2-b372-6638c01a31c7" />
 
-Cada VM tiene dos adaptadores: el 1 en NAT (internet) y el 2 en red solo-anfitrión (para verse entre ellas).
+### Estado inicial red maquina consola
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/e4844a43-3037-4d9b-abd5-fe4a50584cfe" />
 
-Comandos: `ip a` en cada VM y `ping` en los dos sentidos.
+## Comandos de uso para este proceso
 
-**[Captura 6: ip a en las dos VMs, mostrando una dirección en cada interfaz]**
+|Codigo|Para que sirve|ejemplo|
+|---|---|---|
+|IP a|sirve para conocer la IP de nuestra maquina virtual asi como la NAT|192.168.56.XX|
+|ping -c 4 (IP)|sirve para enviar los paquetes de datos entre las maquinas y si llegan con exito o se pierden|4 enviados, perdidos, recibidos|
 
-**[Captura 7: ping de la gráfica a la consola y de la consola a la gráfica]**
+## Ejecución de los comandos para conocer la IP en ambas maquinas virtuales
 
-### **4-SSH 
+### Comandos: (ip a) en grafica 
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/37f4c08f-1744-4c0c-884b-b87d37555898" />
+
+### Comandos: (ip a) en consola
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/9dfb1d21-8c2e-48f3-9b5a-e11f52806419" />
+
+## DATO IMPORTANTE
+- Es muy necesario anotar la IP del anfitrión en cada maquina para posteriormente completar el segundo código por ejemplo **ping -c 4 192.168.56.XX (maquina grafica)** **ping -c 4 192.168.56.XX (maquina consola)** de lo contario no podrá establecer una comunicación  
+
+## Ejecución de los comandos para conectar enviar Datos en ambas Maquinas Virtuales
+
+### Ping maquina grafica enviado con éxito :)
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/cef821fe-46a2-4990-9759-d7fb83281b13" />
+
+### Ping maquina consola enviado con éxito :)
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/50e7217c-b8ae-41fa-9610-11cd70183fd0" />
+
+# **4-SSH** 
 ## 4. SSH
 
 Entramos por SSH desde la VM gráfica a la VM de consola.

@@ -273,7 +273,8 @@ mint montado en virtual box :)
 <img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/991d3d87-1ed5-4841-bb78-333ea0765c56" />
 
 ### **-video de 3 minutos 2 commits por integrante 
-- LINK:
+- LINK: [https://youtu.be/95-AqUwfWZQ]
+
 ## **codigo archivo codigo_sprint1.txt** 
 ### Este Codigo fue enviado el dia miercoles es muy necesario para obtener la nota maxima sin el es Sprint 1 queda descalificado 
 
@@ -300,5 +301,5 @@ mint montado en virtual box :)
 
 | Integrante | Qué hizo | Commits |
 |---|---|---|
-| BRAYAN | instale las maquinas virtuales y añadí comits al repositorio | 2 |
+| BRAYAN | instale las maquinas virtuales y añadí comits al repositorio | 22 |
 | ANDRES | Instaló y configuró las dos VMs, la red, SSH y las instantáneas | 3 |

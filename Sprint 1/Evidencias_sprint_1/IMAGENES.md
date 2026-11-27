@@ -15,7 +15,7 @@ Iniciamos con la Instalación de Linux Mint XCFE version 22.3 edicion 64 bits "p
 |dev2/sda2| swap      |
 |dev3/sda3| home      |
 
-No usamos «borrar el disco 100% REAL»
+**No usamos «borrar el disco 100% REAL**
 
 <img width="959" height="539" alt="Captura de pantalla 2026-11-26 170339" src="https://github.com/user-attachments/assets/3015851a-2249-4174-a847-9a7b4c9d17da" />
 
@@ -43,10 +43,13 @@ No usamos «borrar el disco 100% REAL»
 |cat /etc/fstab| sirve para ver el batch|
 
 ## Captura de pantalla de los cuatro codigos
+
 <img width="959" height="539" alt="todos los comandos ejecutados" src="https://github.com/user-attachments/assets/6975a199-b708-40ba-a993-1679c373acc0" />
 
-## punto 1.2 requerimiento de los Dos navegadores **Firefox y Chromium**
-### chromium (version 158.0.8127.88 for Linux
+## Punto 1.2 Requerimiento de los Dos navegadores **Firefox y Chromium**
+### Chromium (Version 158.0.8127.88 for Linux)
+### Gedit (Version 46.2)
+
 <img width="959" height="539" alt="gedir_version" src="https://github.com/user-attachments/assets/64f98ff7-1de4-4384-9ecb-0fec77760ca0" />
 
 **Codigo de instalacion:**
@@ -54,7 +57,8 @@ No usamos «borrar el disco 100% REAL»
 - sudo apt install -y chromium gedit
 <img width="959" height="539" alt="instalacionde navegadores1eraparte" src="https://github.com/user-attachments/assets/81c1e191-1d23-4560-9fce-618ca081277f" />
 
-**chromium funcionando**
+### **Chromium funcionando**
+
 <img width="959" height="539" alt="chrorium" src="https://github.com/user-attachments/assets/2700efa6-953e-4c09-8cc1-40589cc3d9d1" />
 
 ### Curiosidad del dia 1
@@ -78,6 +82,11 @@ Mozilla Firefox y Nano estan funcionando normalmente en Linux
 mint montado en virtual box :)
 
 <img width="959" height="539" alt="los dos navegadores y dos editores" src="https://github.com/user-attachments/assets/a0f5d687-d82c-4841-abbc-2eba0231ab38" />
+
+## Captura de la maquina virtual apagada tomado una instantanea
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/1ca88c91-15f1-4409-933a-692ec88c4019" />
+
 
 ### **2-VM de consola
 ## 2. VM de consola (g07-consola)

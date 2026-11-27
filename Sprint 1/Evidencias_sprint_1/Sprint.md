@@ -87,27 +87,127 @@ mint montado en virtual box :)
 
 <img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/1ca88c91-15f1-4409-933a-692ec88c4019" />
 
+# **Punto 2 VM de consola
+## VM de consola (g02-consola)
 
-### **2-VM de consola
-## 2. VM de consola (g07-consola)
+### Iniciamos con la Instalación de Rocky Linux version 9 XCFE "por que era mas liviana la version DVD pesaba 16GB mucho para un equipo" con particionado manual
 
-Instalamos Rocky Linux con particionado manual: `/`, swap, `/home` y `/var`. Disco de 25 GB y 2 CPU.
+### Propiedades de la maquina virtual
+
+<img width="959" height="539" alt="caracteristicas de maquin consola" src="https://github.com/user-attachments/assets/0f792ae3-b352-4997-b4bb-7d95b65fb479" />
+
+### Captura asignación de recursos
+- (Estan planteados obligatoriamente en el pdf **proyecto final** para evitar desconteo de puntos)
+
+<img width="959" height="539" alt="rlinux" src="https://github.com/user-attachments/assets/00a39cc0-476b-4955-9149-0fccebdaa161" />
+
+### Punto a destacar
+- se opto por instalación tipo consola de Rocky Linux a diferencia de Linux Mint para poner en practica lo aprendido en la clase Docker en consola de Google
+
+<img width="959" height="539" alt="instalacion sin grafica" src="https://github.com/user-attachments/assets/825a57de-32ab-4dbc-8b9f-e1cf5e835f89" />
+
+### MAPEO/PARTICION
+
+|ASIGNACION DE MEMORIA|DIR|
+|---------|-----------|
+|dev1/sda1| ext4      |
+|dev2/sda2| swap      |
+|dev3/sda3| home      |
+|dev4/sda4| var       |
+
+### Evidencia de que se usa la partición manual
+
+<img width="959" height="539" alt="particionmanual" src="https://github.com/user-attachments/assets/0407e412-c946-4963-ba7b-5e4a5c56f8ec" />
+
+### Tabla de particion
 
 | Partición | Tamaño | Por qué |
 |---|---|---|
-| / | 5 GB | El sistema base, sin entorno gráfico |
-| /var | 10 GB | Docker guarda sus imágenes en /var/lib/docker |
-| swap | 1 GB | Mínimo de la guía |
-| /home | 1 GB | Solo guardamos archivos pequeños |
+| / | 15 GB | El sistema base, sin entorno gráfico |
+| /var | 3 GB | Docker guarda sus imágenes en /var/lib/docker |
+| swap | 3 GB | Mínimo de la guía |
+| /home | 4 GB | Solo guardamos archivos pequeños |
 
-Herramientas instaladas: make, rsync, curl, git y wget.
+### Captura de particiones confirmadas :)
 
-Comandos: `lsblk`, `df -h`, `cat /etc/fstab`, `make --version`, `rsync --version`, `curl --version`, `git --version`, `wget --version`
+<img width="959" height="539" alt="distrubucion de memoria yameoa" src="https://github.com/user-attachments/assets/093eafcb-778c-46a9-b7c9-9dc9a6dcf93a" />
 
-**[Captura 4: lsblk, df -h y cat /etc/fstab de g07-consola, con prompt y fecha]**
+### Instalación ya finalizada
 
-**[Captura 5: las cinco herramientas mostrando su versión]**
-### **3-red
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/f6e80c83-56c2-4d77-8c60-78ad9f5a3cfd" />
+
+### Maquina funcionando
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/d3d0c774-35b1-49f0-abcb-46850c8a7891" />
+
+# Ejecución de los 4 códigos para g02-consola
+
+|Codigo|para que sirve|
+|------|--------------|
+|hostname|sirve para saber el nombre del host en este caso go2-consola|
+|lsblk|sirve para ver las particiones en este caso las cuatro que se crearon previamente|
+|df -h|sirve para ver el espacio en disco|
+|cat /etc/fstab| sirve para ver el batch|
+
+### Código 1 host (g02-consola)
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/a53b8965-0bef-4ad8-ab8c-c1d99c06af74" />
+
+### Codigo 2 lsblk (particion correcta de los /, /home, swam, /var)
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/7311b388-942f-455f-80ca-222dd13f8f3b" />
+
+### Código 3 df -h (espacio de disco)
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/521d96f3-e97b-4e3c-a15d-8820a7b99127" />
+
+### Código 4 cat /etc/fstab (para ver el contenido de archivo)
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/4e1d30b9-2507-4fc5-bfa7-8b309e774034" />
+
+# las 5 Herramientas instaladas
+## Requerido obligatoriamente en el PDF
+
+|HERRAMIENTA|PARA QUE SIRVE|VERSION|
+|---|---|---|
+|MAKE|para automatizar codigo que se repite verifica **GNU MAKE**|4.3|
+|RSYNC|para copiar y sincronizar archivos o carpetas de manera eficiente|3.2.7 protocol v31|
+|CURL|para transferir datos desde o hacia un servidor usando múltiples protocolos (HTTP, HTTPS, FTP etc)|7.76.1 red hat|
+|GIT|para guardar el historial de cambios del código fuente y colaborar en proyectos de software|2.52.0|
+|WGET|para descargar archivos desde internet de forma no interactiva con soporte para descargas recursivas (bajar sitios completos o múltiples carpetas)|V3|
+
+
+### Código de instalación para las 5 herramientas
+"sudo dnf install -y make rsync curl git wget"
+
+### Primera herramienta make (version 4,3) 
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/c0f5aba9-9406-4998-81e6-b0ba39f052e9" />
+
+### Segunda herramienta rsync (version 3.2.7 protocol v31)
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/034e9ef2-ec6b-4b3a-a541-92eb5670c765" />
+
+### Tercera herramienta curl (versión 7.76.1)
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/9d2ed1ba-ff15-4dc0-b474-2b0ce439edec" />
+
+### cuarta herramienta git (versión 2.52.0)
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/aab6e296-1a7f-4e91-9dd5-0a59e6f5e609" />
+
+### Quinta herramienta wget (version V3)
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/9d677901-c3b9-42d4-8335-8c45276910ce" />
+
+### Captura (instantánea **instalacion limpia**) maquina apagada
+- **Es aquí en donde se finaliza el punto numero 2 instalación de la consola esta imagen simboliza que todo se cumplio correctamente para asi asegurar la nota maxima :)** 
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/c136b106-154b-473a-8fe5-8b4fd1e61c5e" />
+
+
+
+
+# **3-red**
 ## 3. Red
 
 Cada VM tiene dos adaptadores: el 1 en NAT (internet) y el 2 en red solo-anfitrión (para verse entre ellas).

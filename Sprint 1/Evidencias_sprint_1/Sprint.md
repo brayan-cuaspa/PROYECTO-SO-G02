@@ -274,35 +274,31 @@ mint montado en virtual box :)
 
 ### **-video de 3 minutos 2 commits por integrante 
 - LINK:
-### **-el archivo codigo_sprint1.txt 
+## **codigo archivo codigo_sprint1.txt** 
+### Este Codigo fue enviado el dia miercoles es muy necesario para obtener la nota maxima sin el es Sprint 1 queda descalificado 
 
+## Recursos importantes para completar el paso
 
+|recurso|para que sirve|
+|---|---|
+|NN02-DT7E|codigo subido al campus correspondiente al grupo 2 para que la entrega del sprint 1 sea valida|
+|echo "SU CODIGO" > codigo_sprint1.txt|comando para crear el archivo txt|
 
-## 5. Instantáneas
+## Codigo en linux mint 
 
-Una por VM, llamada `instalacion-limpia`, tomada con la VM apagada y la instalación terminada.
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/76f252f4-576a-44d5-98fb-982e7a50184a" />
 
-**[Captura 9: pestaña de instantáneas de g07-grafica]**
+## Codigo en rocky linux
 
-**[Captura 10: pestaña de instantáneas de g07-consola]**
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/5e695eaa-8361-404c-91b1-f17de76543d3" />
 
-## Código del sprint
+## las dos maquinas funcionando correctamente
 
-El docente publicó el código en el campus 48 horas antes del cierre. Lo guardamos en las dos VMs y lo mostramos en el video.
-
-Comandos: `echo "XX00-AB12" > codigo_sprint1.txt`, `cat codigo_sprint1.txt` y `date`
-
-## Video del sprint (3 minutos)
-
-Pantalla continua y sin cortes. Cada integrante muestra su parte, dice su nombre y qué hizo en los primeros 10 segundos, y aparece su cara.
-
-
-
-Aquí va el enlace del video de YouTube (público o no listado).
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/c5565e92-af5b-448b-a0fe-244e1ead4e1f" />
 
 ## **DISTRIBUCION DE TRABAJO POR INTEGRANTE DEL EQUIPO**
 
 | Integrante | Qué hizo | Commits |
 |---|---|---|
-| BRAYAN | Creó las páginas del sitio y revisó la ficha | 2 |
+| BRAYAN | instale las maquinas virtuales y añadí comits al repositorio | 2 |
 | ANDRES | Instaló y configuró las dos VMs, la red, SSH y las instantáneas | 3 |

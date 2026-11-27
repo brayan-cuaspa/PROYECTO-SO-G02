@@ -17,6 +17,9 @@ No usamos «borrar el disco 100% REAL»
 
 <img width="959" height="539" alt="Captura de pantalla 2026-11-26 170339" src="https://github.com/user-attachments/assets/3015851a-2249-4174-a847-9a7b4c9d17da" />
 
+## comprobante el disco todavía sigue ahí después de haber instalado Linux con todo y particiones
+<img width="959" height="539" alt="comprobante_de_que_el_disco_quedo_bien_instalado" src="https://github.com/user-attachments/assets/911a5c80-78e7-45b9-bdae-0a452e986820" />
+
 | Partición | Tamaño | Por qué |
 |---|---|---|
 | ext4 | 15 GB | es por que es la raíz va montado el SO y el software a descargar y el instalado |
@@ -38,6 +41,7 @@ Firefox y Chromium, nano y gedit.
 **[Captura 3: los dos navegadores y los dos editores abiertos]**
 
 ### **2-VM de consola
+usdbcsd
 ### **3-red 
 ### **4-SSH 
 ### **5-instantáneas

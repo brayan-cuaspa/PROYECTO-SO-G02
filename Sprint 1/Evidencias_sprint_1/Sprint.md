@@ -246,15 +246,34 @@ mint montado en virtual box :)
 <img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/50e7217c-b8ae-41fa-9610-11cd70183fd0" />
 
 # **4-SSH** 
-## 4. SSH
+## "SECURE SHELL controlar de manera remota la consola" El objetivo principal de este punto es saber si estamos haciendo una conexión entre ambas maquinas por SSH para controlar la consola de Rocky Linux por medio de Linux Mint la maquina virtual de la grafica.
 
-Entramos por SSH desde la VM gráfica a la VM de consola.
+## Comandos a utilizar para completar este punto
+|Codigo|para que sirve|ejemplo|
+|---|---|---|
+|SSH usuario@direccion-de-la-consola|sirve para conectar la consola a la grafica a través de los servicios SSH|pepitoperez@192.168.56.xx|
+|sudo systemctl status sshd|sirve para saber si el servicio esta activo de lo contario el codigo anterior no funcionara|it's rinning|
 
-Comando: `ssh usuario@direccion-de-la-consola`
+## El servicio esta activo
 
-**[Captura 8: la sesión SSH abierta, con el prompt de la consola]**
-### **5-instantáneas
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/b687791f-4d7a-40ac-a737-37eed7718b77" />
+
+### Captura la sesión SSH abierta con el prompt de la consola
+-con esto queda evidente que lo hicimos correctamente los pasos ╰(*°▽°*)╯
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/7ae55ba1-a7f2-4128-9ec9-fc89407f88b2" />
+
+# **Paso FINAL 100% DEL SPRINT 1 (instantáneas)** 
+### Instantanea maquina virtual grafica Linux Mint
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/53bfcc7c-2261-484a-b897-f8d33e212040" />
+
+### Instantánea maquina virtual grafica Rocky Linux 
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/991d3d87-1ed5-4841-bb78-333ea0765c56" />
+
 ### **-video de 3 minutos 2 commits por integrante 
+- LINK:
 ### **-el archivo codigo_sprint1.txt 
 
 
@@ -276,17 +295,7 @@ Comandos: `echo "XX00-AB12" > codigo_sprint1.txt`, `cat codigo_sprint1.txt` y `d
 ## Video del sprint (3 minutos)
 
 Pantalla continua y sin cortes. Cada integrante muestra su parte, dice su nombre y qué hizo en los primeros 10 segundos, y aparece su cara.
-<img width="1600" height="720" alt="swapon --show Dos swaps activos" src="https://github.com/user-attachments/assets/58b19990-b8c1-4236-b46d-fc4cdcdb8d5f" />
-<img width="1600" height="720" alt="uname -a identifica el sistema (kernel, nombre del equipo, arquitectura). free -m muestra la
-memoria en megabytes. ip a lista las interfaces de red y sus direcciones" src="https://github.com/user-attachments/assets/f2bed7b2-6faa-4672-a6bb-ec3089cabd70" />
-<img width="1600" height="720" alt="df -h cuánto espacio queda" src="https://github.com/user-attachments/assets/55f18789-807e-4560-9047-195556c69a0e" />
-<img width="1600" height="720" alt="lsblk cómo quedó el disco" src="https://github.com/user-attachments/assets/f5ec7549-e2b9-42be-9497-28ffe163d334" />
-### Sprint 1 Montaje
-<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 44 AM" src="https://github.com/user-attachments/assets/21c1ddfa-f08d-41fb-8edc-34aede710ce1" />
-<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 42 AM" src="https://github.com/user-attachments/assets/7cebb1ef-4023-4eb0-8f63-7ff76d76a4d8" />
-<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 40 AM" src="https://github.com/user-attachments/assets/47a4a874-1e28-4ecd-87cc-679a8b3641e3" />
-<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 46 AM" src="https://github.com/user-attachments/assets/abde14c8-9f78-4575-83f0-2c8d5cc04a7f" />
-<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 45 AM" src="https://github.com/user-attachments/assets/b4b86700-b218-4f51-a5a5-f394df842ddc" />
+
 
 
 Aquí va el enlace del video de YouTube (público o no listado).

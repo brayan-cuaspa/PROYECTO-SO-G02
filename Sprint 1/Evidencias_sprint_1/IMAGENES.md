@@ -1,31 +1,35 @@
-<img width="856" height="385" alt="error en instalacion" src="https://github.com/user-attachments/assets/f7e1dabc-a69c-47b7-a7c7-625f0f7761b9" />
-<img width="1600" height="720" alt="swapon --show Dos swaps activos" src="https://github.com/user-attachments/assets/58b19990-b8c1-4236-b46d-fc4cdcdb8d5f" />
-<img width="1600" height="720" alt="uname -a identifica el sistema (kernel, nombre del equipo, arquitectura). free -m muestra la
-memoria en megabytes. ip a lista las interfaces de red y sus direcciones" src="https://github.com/user-attachments/assets/f2bed7b2-6faa-4672-a6bb-ec3089cabd70" />
-<img width="1600" height="720" alt="df -h cuánto espacio queda" src="https://github.com/user-attachments/assets/55f18789-807e-4560-9047-195556c69a0e" />
-<img width="1600" height="720" alt="lsblk cómo quedó el disco" src="https://github.com/user-attachments/assets/f5ec7549-e2b9-42be-9497-28ffe163d334" />
-### Sprint 1 Montaje
-<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 44 AM" src="https://github.com/user-attachments/assets/21c1ddfa-f08d-41fb-8edc-34aede710ce1" />
-<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 42 AM" src="https://github.com/user-attachments/assets/7cebb1ef-4023-4eb0-8f63-7ff76d76a4d8" />
-<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 40 AM" src="https://github.com/user-attachments/assets/47a4a874-1e28-4ecd-87cc-679a8b3641e3" />
-<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 46 AM" src="https://github.com/user-attachments/assets/abde14c8-9f78-4575-83f0-2c8d5cc04a7f" />
-<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 45 AM" src="https://github.com/user-attachments/assets/b4b86700-b218-4f51-a5a5-f394df842ddc" />
-
-### **Los cinco puntos que aseguran la nota máxima para sprint 1  
-### **1-VM gráfica
+# **SPRINT 1 DESARROLLO**
+## **Los cinco puntos que aseguran la nota máxima para sprint 1  
+### ** 1-VM gráfica **
 **primer punto VM gráfica (g02-grafica)**
-**Iniciamos con la Instalación de Linux Mint XCFE version 22.3 edicion 64 bits "por economizar recursos en un PC de 8GB" con particionado manual (hasta este punto se cumple que no se borro el disco evitando des conteo de puntos) 
-: dev/sda1 ext4 `, swap y `/home`. No usamos «borrar el disco».
+Iniciamos con la Instalación de Linux Mint XCFE version 22.3 edicion 64 bits "por economizar recursos en un PC de 8GB" con particionado manual (hasta este punto se cumple que no se borro el disco evitando des conteo de puntos)
+## Propiedades de la maquina virtual ya montada :)
+
+<img width="959" height="539" alt="caracteristicas de la maquina virtual" src="https://github.com/user-attachments/assets/b745fa09-c53d-4146-a454-018adc5ddc3f" />
+
+|ASIGNACION DE MEMORIA|DIR|
+|---------|-----------|
+|dev/sda1-| ext4      |
+|dev2/sda2| swap      |
+|dev3/sda3| home      |
+
+No usamos «borrar el disco 100% REAL»
+
+<img width="959" height="539" alt="Captura de pantalla 2026-11-26 170339" src="https://github.com/user-attachments/assets/3015851a-2249-4174-a847-9a7b4c9d17da" />
 
 | Partición | Tamaño | Por qué |
 |---|---|---|
-| / | 14 GB | El sistema y los programas, con margen para actualizar |
-| swap | 2 GB | Igual a la RAM de la VM, por si falta memoria |
-| /home | 9 GB | Los archivos de los usuarios, separados del sistema |
+| ext4 | 15 GB | es por que es la raíz va montado el SO y el software a descargar y el instalado |
+| swap | 3 GB | por si la RAM falla por alcanzar su máxima capacidad accede a la virtual |
+| home | 3.9 GB | Los archivos de los usuarios documentos, descargas etc separados del sistema |
 
-Dos navegadores y dos editores instalados: Firefox y Chromium, nano y gedit.
+### Tabla de asignación de recursos
+<img width="959" height="539" alt="TABLA_DE_PARTICION" src="https://github.com/user-attachments/assets/98f02729-4c4e-4074-ac3c-89a4dc72896d" />
 
-Comandos: `lsblk`, `df -h`, `cat /etc/fstab`
+## punto 1.1 requerimiento de los Dos navegadores y dos editores instalados
+Firefox y Chromium, nano y gedit.
+**Comandos: `lsblk`, `df -h`, `cat /etc/fstab`**
+
 
 **[Captura 1: editor de particiones durante la instalación]**
 
@@ -96,6 +100,18 @@ Comandos: `echo "XX00-AB12" > codigo_sprint1.txt`, `cat codigo_sprint1.txt` y `d
 ## Video del sprint (3 minutos)
 
 Pantalla continua y sin cortes. Cada integrante muestra su parte, dice su nombre y qué hizo en los primeros 10 segundos, y aparece su cara.
+<img width="1600" height="720" alt="swapon --show Dos swaps activos" src="https://github.com/user-attachments/assets/58b19990-b8c1-4236-b46d-fc4cdcdb8d5f" />
+<img width="1600" height="720" alt="uname -a identifica el sistema (kernel, nombre del equipo, arquitectura). free -m muestra la
+memoria en megabytes. ip a lista las interfaces de red y sus direcciones" src="https://github.com/user-attachments/assets/f2bed7b2-6faa-4672-a6bb-ec3089cabd70" />
+<img width="1600" height="720" alt="df -h cuánto espacio queda" src="https://github.com/user-attachments/assets/55f18789-807e-4560-9047-195556c69a0e" />
+<img width="1600" height="720" alt="lsblk cómo quedó el disco" src="https://github.com/user-attachments/assets/f5ec7549-e2b9-42be-9497-28ffe163d334" />
+### Sprint 1 Montaje
+<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 44 AM" src="https://github.com/user-attachments/assets/21c1ddfa-f08d-41fb-8edc-34aede710ce1" />
+<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 42 AM" src="https://github.com/user-attachments/assets/7cebb1ef-4023-4eb0-8f63-7ff76d76a4d8" />
+<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 40 AM" src="https://github.com/user-attachments/assets/47a4a874-1e28-4ecd-87cc-679a8b3641e3" />
+<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 46 AM" src="https://github.com/user-attachments/assets/abde14c8-9f78-4575-83f0-2c8d5cc04a7f" />
+<img width="1600" height="720" alt="WhatsApp Image 2026-11-26 at 10 19 45 AM" src="https://github.com/user-attachments/assets/b4b86700-b218-4f51-a5a5-f394df842ddc" />
+
 
 Aquí va el enlace del video de YouTube (público o no listado).
 

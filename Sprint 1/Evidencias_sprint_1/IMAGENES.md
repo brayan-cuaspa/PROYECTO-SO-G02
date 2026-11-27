@@ -7,6 +7,8 @@ Iniciamos con la Instalación de Linux Mint XCFE version 22.3 edicion 64 bits "p
 
 <img width="959" height="539" alt="caracteristicas de la maquina virtual" src="https://github.com/user-attachments/assets/b745fa09-c53d-4146-a454-018adc5ddc3f" />
 
+### MAPEO/PARTICION
+
 |ASIGNACION DE MEMORIA|DIR|
 |---------|-----------|
 |dev/sda1-| ext4      |
@@ -20,6 +22,8 @@ No usamos «borrar el disco 100% REAL»
 ## comprobante el disco todavía sigue ahí después de haber instalado Linux con todo y particiones
 <img width="959" height="539" alt="comprobante_de_que_el_disco_quedo_bien_instalado" src="https://github.com/user-attachments/assets/911a5c80-78e7-45b9-bdae-0a452e986820" />
 
+## Mapeo de particiones 
+
 | Partición | Tamaño | Por qué |
 |---|---|---|
 | ext4 | 15 GB | es por que es la raíz va montado el SO y el software a descargar y el instalado |
@@ -29,27 +33,53 @@ No usamos «borrar el disco 100% REAL»
 ### Tabla de asignación de recursos
 <img width="959" height="539" alt="TABLA_DE_PARTICION" src="https://github.com/user-attachments/assets/98f02729-4c4e-4074-ac3c-89a4dc72896d" />
 
-## punto 1.1 requerimiento de los Dos navegadores y dos editores instalados
-Firefox y Chromium, nano y gedit.
-**Comandos: `lsblk`, `df -h`, `cat /etc/fstab`**
+## Punto 1.1 Captura de pantalla los cuatro codigos
 
+|Codigo|para que sirve|
+|------|--------------|
+|hostname|sirve para saber el nombre del host en este caso go2-grafica|
+|lsblk|sirve para ver las particiones en este caso las tres que se crearon previamente|
+|df -h|sirve para ver el espacio|
+|cat /etc/fstab| sirve para ver el batch|
 
-**[Captura 1: editor de particiones durante la instalación]**
+## Captura de pantalla de los cuatro codigos
+<img width="959" height="539" alt="todos los comandos ejecutados" src="https://github.com/user-attachments/assets/6975a199-b708-40ba-a993-1679c373acc0" />
 
-**[Captura 2: lsblk, df -h y cat /etc/fstab, con el prompt usuario@g07-grafica y la salida de date]**
+## punto 1.2 requerimiento de los Dos navegadores **Firefox y Chromium**
+### chromium (version 158.0.8127.88 for Linux
+<img width="959" height="539" alt="gedir_version" src="https://github.com/user-attachments/assets/64f98ff7-1de4-4384-9ecb-0fec77760ca0" />
 
-**[Captura 3: los dos navegadores y los dos editores abiertos]**
+**Codigo de instalacion:**
+- sudo apt update
+- sudo apt install -y chromium gedit
+<img width="959" height="539" alt="instalacionde navegadores1eraparte" src="https://github.com/user-attachments/assets/81c1e191-1d23-4560-9fce-618ca081277f" />
+
+**chromium funcionando**
+<img width="959" height="539" alt="chrorium" src="https://github.com/user-attachments/assets/2700efa6-953e-4c09-8cc1-40589cc3d9d1" />
+
+### Curiosidad del dia 1
+- Linux Mint ya viene con Mozilla Firefox instalado asi que solo se procedera
+a mostrar junto al Chromium funcionando
+
+## Punto 1.3 requerimiento de los Dos editores **gedit y nano**
+**Codigo de instalacion:**
+- sudo apt update
+- sudo apt install -y chromium gedit
+
+### Curiosidad del dia 2 
+- Linux Mint ya viene con Nano instalado asi que solo se procedera
+a mostrar junto al gedit funcionando
+- se utiliza el mismo codigo que el chromium debido a que se instala los dos
+en paquete
+
+## Captura de pantalla de confirmación paso completado con extito
+- se procede a demostrar que el Chromium el Gedit junto con
+Mozilla Firefox y Nano estan funcionando normalmente en Linux
+mint montado en virtual box :)
+
+<img width="959" height="539" alt="los dos navegadores y dos editores" src="https://github.com/user-attachments/assets/a0f5d687-d82c-4841-abbc-2eba0231ab38" />
 
 ### **2-VM de consola
-usdbcsd
-### **3-red 
-### **4-SSH 
-### **5-instantáneas
-### **-video de 3 minutos 2 commits por integrante 
-### **-el archivo codigo_sprint1.txt 
-
-
-
 ## 2. VM de consola (g07-consola)
 
 Instalamos Rocky Linux con particionado manual: `/`, swap, `/home` y `/var`. Disco de 25 GB y 2 CPU.
@@ -68,7 +98,7 @@ Comandos: `lsblk`, `df -h`, `cat /etc/fstab`, `make --version`, `rsync --version
 **[Captura 4: lsblk, df -h y cat /etc/fstab de g07-consola, con prompt y fecha]**
 
 **[Captura 5: las cinco herramientas mostrando su versión]**
-
+### **3-red
 ## 3. Red
 
 Cada VM tiene dos adaptadores: el 1 en NAT (internet) y el 2 en red solo-anfitrión (para verse entre ellas).
@@ -79,6 +109,7 @@ Comandos: `ip a` en cada VM y `ping` en los dos sentidos.
 
 **[Captura 7: ping de la gráfica a la consola y de la consola a la gráfica]**
 
+### **4-SSH 
 ## 4. SSH
 
 Entramos por SSH desde la VM gráfica a la VM de consola.
@@ -86,6 +117,11 @@ Entramos por SSH desde la VM gráfica a la VM de consola.
 Comando: `ssh usuario@direccion-de-la-consola`
 
 **[Captura 8: la sesión SSH abierta, con el prompt de la consola]**
+### **5-instantáneas
+### **-video de 3 minutos 2 commits por integrante 
+### **-el archivo codigo_sprint1.txt 
+
+
 
 ## 5. Instantáneas
 
@@ -119,9 +155,9 @@ memoria en megabytes. ip a lista las interfaces de red y sus direcciones" src="h
 
 Aquí va el enlace del video de YouTube (público o no listado).
 
-## Lo que hizo cada integrante en este sprint
+## **DISTRIBUCION DE TRABAJO POR INTEGRANTE DEL EQUIPO**
 
 | Integrante | Qué hizo | Commits |
 |---|---|---|
-| Ana | Creó las páginas del sitio y revisó la ficha | 2 |
-| Luis | Instaló y configuró las dos VMs, la red, SSH y las instantáneas | 3 |
+| BRAYAN | Creó las páginas del sitio y revisó la ficha | 2 |
+| ANDRES | Instaló y configuró las dos VMs, la red, SSH y las instantáneas | 3 |
